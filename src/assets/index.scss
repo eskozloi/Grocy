@@ -1,0 +1,289 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222222;
+  --vt-c-black-mute: #282828;
+
+  --vt-c-indigo: #2c3e50;
+
+  --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
+  --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
+  --vt-c-divider-dark-1: rgba(84, 84, 84, 0.65);
+  --vt-c-divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: #303030;
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--vt-c-black);
+    --color-background-soft: var(--vt-c-black-soft);
+    --color-background-mute: var(--vt-c-black-mute);
+
+    --color-border: var(--vt-c-divider-dark-2);
+    --color-border-hover: var(--vt-c-divider-dark-1);
+
+    --color-heading: var(--vt-c-text-dark-1);
+    --color-text: var(--vt-c-text-dark-2);
+  }
+}
+
+@font-face {
+  font-family: "Eucid Circular A";
+  src: url(fonts/Euclid-Circular-A-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Eucid Circular A";
+  src: url(fonts/Euclid-Circular-A-Light.woff2) format("woff2");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Eucid Circular A";
+  src: url(fonts/Euclid-Circular-A-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Eucid Circular A";
+  src: url(fonts/Euclid-Circular-A-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Eucid Circular A";
+  src: url(fonts/Euclid-Circular-A-Bold.woff2) format("woff2");
+  font-weight: 700;
+}
+
+*,
+*::before,
+*::after {
+  font-family: Eucid Circular A;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background-color: #ffffff;
+  /*padding: 3em 4em;*/
+  color: var(--color-text);
+  background: var(--color-background);
+  transition: color 0.5s, background-color 0.5s;
+  /*line-height: 1.6;*/
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root,
+.App {
+  @apply w-full h-full;
+}
+
+button {
+  @apply text-black-80 bg-black-6 px-1em py-0.5em;
+}
+
+button.reverse {
+  @apply text-black-40 bg-transparent;
+}
+
+.parrentCenter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+h1 {
+  font-size: 6em;
+}
+
+h2 {
+  font-size: 4em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  line-height: 1.28em;
+}
+
+/*.main-header-menu {
+  display: none;
+}
+.main-header-menu .frame-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  padding: 0;
+}*/
+.main-header-menu-toggle {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transform: scale(0.7);
+  transform: scale(0.7);
+}
+.main-header-menu-toggle .top {
+  stroke-dasharray: 40 82;
+}
+.main-header-menu-toggle .middle {
+  stroke-dasharray: 40 111;
+}
+.main-header-menu-toggle .bottom {
+  stroke-dasharray: 40 161;
+}
+.main-header-menu-toggle.is-open {
+  -webkit-transform: rotate(45deg) scale(0.9);
+  transform: rotate(45deg) scale(0.9);
+}
+.main-header-menu-toggle.is-open .top {
+  stroke-dasharray: 17 82;
+  stroke-dashoffset: -62px;
+}
+.main-header-menu-toggle.is-open .middle {
+  stroke-dashoffset: 23px;
+}
+.main-header-menu-toggle.is-open .bottom {
+  stroke-dashoffset: -83px;
+}
+.main-header-menu-toggle .line {
+  fill: none;
+  -webkit-transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #121512;
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0 1em;
+}
+
+td,
+th {
+  padding: 1rem 0;
+  /*max-height: 6em;*/
+}
+
+td h4,
+th h4,
+td div,
+th div {
+  padding: 0 1.25rem;
+  @apply flex justify-center items-center;
+}
+
+td h4,
+th h4 {
+  @apply border-r border-r-black-40;
+}
+
+tbody {
+  overflow: auto;
+}
+
+tbody tr:nth-child(odd) {
+  @apply bg-black-8;
+}
+
+tbody tr td:first-child {
+  border-top-left-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+}
+tbody tr td:last-child {
+  border-top-right-radius: 0.5em;
+  border-bottom-right-radius: 0.5em;
+}
+tbody tr:nth-child(even) td:first-child {
+  @apply border-l border-l-black-60;
+}
+tbody tr:nth-child(even) td:last-child {
+  @apply border-r border-r-black-60;
+}
+tbody tr:nth-child(even) td {
+  @apply border-t border-t-black-60 border-b border-b-black-60;
+}
+
+input,
+select {
+  /*background: none;
+  @apply border border-black-40 rounded-md;*/
+  @apply bg-black-6 p-0.5em;
+}
+input:focus {
+  background: white;
+  border: 1px solid grey;
+}
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="date"]::-webkit-inner-spin-button {
+  margin: auto;
+  font-size: 84%;
+}
