@@ -1,15 +1,17 @@
-<svg width="410" height="404" viewBox="0 0 410 404" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M399.641 59.5246L215.643 388.545C211.844 395.338 202.084 395.378 198.228 388.618L10.5817 59.5563C6.38087 52.1896 12.6802 43.2665 21.0281 44.7586L205.223 77.6824C206.398 77.8924 207.601 77.8904 208.776 77.6763L389.119 44.8058C397.439 43.2894 403.768 52.1434 399.641 59.5246Z" fill="url(#paint0_linear)"/>
-<path d="M292.965 1.5744L156.801 28.2552C154.563 28.6937 152.906 30.5903 152.771 32.8664L144.395 174.33C144.198 177.662 147.258 180.248 150.51 179.498L188.42 170.749C191.967 169.931 195.172 173.055 194.443 176.622L183.18 231.775C182.422 235.487 185.907 238.661 189.532 237.56L212.947 230.446C216.577 229.344 220.065 232.527 219.297 236.242L201.398 322.875C200.278 328.294 207.486 331.249 210.492 326.603L212.5 323.5L323.454 102.072C325.312 98.3645 322.108 94.137 318.036 94.9228L279.014 102.454C275.347 103.161 272.227 99.746 273.262 96.1583L298.731 7.86689C299.767 4.27314 296.636 0.855181 292.965 1.5744Z" fill="url(#paint1_linear)"/>
-<defs>
-<linearGradient id="paint0_linear" x1="6.00017" y1="32.9999" x2="235" y2="344" gradientUnits="userSpaceOnUse">
-<stop stop-color="#41D1FF"/>
-<stop offset="1" stop-color="#BD34FE"/>
-</linearGradient>
-<linearGradient id="paint1_linear" x1="194.651" y1="8.81818" x2="236.076" y2="292.989" gradientUnits="userSpaceOnUse">
-<stop stop-color="#FFEA83"/>
-<stop offset="0.0833333" stop-color="#FFDD35"/>
-<stop offset="1" stop-color="#FFA800"/>
-</linearGradient>
-</defs>
+<svg xmlns="http://www.w3.org/2000/svg" width="32.079" height="25.945" viewBox="0 0 32.079 25.945">
+  <g id="favicon" transform="translate(0.079 0.014)" opacity="0.8">
+    <rect id="Rectangle_5" data-name="Rectangle 5" width="32" height="1.814" rx="0.907" transform="translate(0 15.025)"/>
+    <path id="Path_25" data-name="Path 25" d="M10.929,51.036h15.24c4.157-1.724,6.929-4.816,6.929-8.346H4C4,46.221,6.771,49.313,10.929,51.036Z" transform="translate(-2.548 -26.194)"/>
+    <rect id="Rectangle_6" data-name="Rectangle 6" width="15.967" height="1.814" rx="0.907" transform="translate(8.016 24.117)"/>
+    <path id="Path_26" data-name="Path 26" d="M20.532,14.69a9.782,9.782,0,0,0-2.54,2.9C16.54,20.5,16.9,23.762,14,25.939" transform="translate(-8.906 -8.386)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_27" data-name="Path 27" d="M19.019,14.69c1.452,4.355-3.266,4.718-6.169,6.169-1.089.726-1.452,2.54-1.089,4.355" transform="translate(-7.406 -8.387)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_28" data-name="Path 28" d="M5.35,37.593c.062-.12,1.528-2.874,4.424-2.9a5.087,5.087,0,0,1,4.522,2.9" transform="translate(-3.409 -21.118)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_29" data-name="Path 29" d="M9.03,35.867a5.975,5.975,0,0,1,4.659-2.177,5.818,5.818,0,0,1,4.765,2.177" transform="translate(-5.753 -20.483)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_30" data-name="Path 30" d="M58.4,38.521a3.662,3.662,0,0,1,2.54-2.37,3.437,3.437,0,0,1,3.331,1.172" transform="translate(-37.154 -22.003)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_31" data-name="Path 31" d="M46.5,36.5A7.082,7.082,0,0,1,53.9,32.2a6.88,6.88,0,0,1,4.514,3.371" transform="translate(-29.56 -19.48)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_32" data-name="Path 32" d="M29.4,37.115A5.572,5.572,0,0,1,33.733,34.7a5.356,5.356,0,0,1,4.605,2.068" transform="translate(-18.701 -21.121)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+    <path id="Path_33" data-name="Path 33" d="M36.786,8.8l-2.613-.352L31.56,8.093l1.611-2.087L34.782,3.92a6.3,6.3,0,0,0,2,4.877Z" transform="translate(-20.079 -1.543)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <rect id="Rectangle_7" data-name="Rectangle 7" width="1.753" height="5.549" transform="translate(20.199 1.999) rotate(67.67)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    <path id="Path_34" data-name="Path 34" d="M44.19,4.1c.076-.123,1.916-2.9,4.834-2.573a5.141,5.141,0,0,1,4.17,3.669" transform="translate(-28.108 0)" fill="none" stroke="#000" stroke-linecap="round" stroke-miterlimit="10" stroke-width="3"/>
+  </g>
 </svg>

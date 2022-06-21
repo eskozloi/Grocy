@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26.002" height="32.247" viewBox="0 0 26.002 32.247">
+  <g id="bag" transform="translate(0.002 -0.003)" opacity="0.8">
+    <path id="Path_47" data-name="Path 47" d="M25.84,5.84a3.677,3.677,0,0,0-1.06-3.21V.67H22.81s.01,1.99.02,3.92c0,1.26-2.4,3.33-4.13,4.66h5.34c1.68-1.76,1.63-2.43,1.79-3.41Z"/>
+    <path id="Path_48" data-name="Path 48" d="M4.18,3.12c-.65-.18-1.3-.35-1.95-.53-.6.36-1.2.72-1.81,1.08L1.96,9.26H4.31L4.18,3.13Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"/>
+    <rect id="Rectangle_105" data-name="Rectangle 105" width="0.72" height="2.9" transform="matrix(0.954, -0.3, 0.3, 0.954, -0.002, 2.039)"/>
+    <rect id="Rectangle_106" data-name="Rectangle 106" width="0.84" height="2.9" transform="translate(0.974 1.163) rotate(-4.42)"/>
+    <rect id="Rectangle_107" data-name="Rectangle 107" width="0.84" height="3.86" transform="translate(1.801 0.624) rotate(-12.85)"/>
+    <rect id="Rectangle_108" data-name="Rectangle 108" width="0.72" height="2.9" transform="translate(3.554 1.388) rotate(9.33)"/>
+    <path id="Path_49" data-name="Path 49" d="M10.63,6.26c-.44-.51-.89-1.01-1.33-1.52-.7-.03-1.4-.07-2.1-.1L5.7,9.24H8.75l1.89-2.99Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.75"/>
+    <rect id="Rectangle_109" data-name="Rectangle 109" width="0.72" height="2.9" transform="translate(7.748 3.055) rotate(16.04)"/>
+    <rect id="Rectangle_110" data-name="Rectangle 110" width="0.84" height="2.9" transform="translate(9.025 2.863) rotate(29.06)"/>
+    <rect id="Rectangle_111" data-name="Rectangle 111" width="0.84" height="3.86" transform="translate(10.021 2.878) rotate(20.63)"/>
+    <rect id="Rectangle_112" data-name="Rectangle 112" width="0.72" height="2.9" transform="matrix(0.734, 0.68, -0.68, 0.734, 11.062, 4.486)"/>
+    <path id="Path_50" data-name="Path 50" d="M17.29,6.02,14.06,5.4l-.74,3.85h3.34Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <path id="Path_51" data-name="Path 51" d="M19.89,2.18a2.125,2.125,0,0,0-.67.08,3.011,3.011,0,0,0-5.49-.42,2.741,2.741,0,0,0-.28-.05,1.718,1.718,0,0,0-.21,3.43A1.742,1.742,0,0,0,14,5.09a2.961,2.961,0,0,0,4.11.62A2.15,2.15,0,1,0,19.9,2.19Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5"/>
+    <path id="Path_52" data-name="Path 52" d="M0,8.25v24H26v-24Zm22.96,4.92c-.36,4.67-4.66,8.36-9.91,8.36S3.52,17.86,3.14,13.2a1.494,1.494,0,1,1,1.05-.12,9,9,0,0,0,17.62,0,1.506,1.506,0,1,1,1.15.09Z"/>
+  </g>
+</svg>

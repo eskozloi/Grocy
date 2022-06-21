@@ -88,7 +88,7 @@
   margin: 0;
   position: relative;
   font-weight: 400;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 ::-webkit-scrollbar {
@@ -98,7 +98,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  overflow: hidden;
+  /*overflow: hidden;*/
   background-color: #ffffff;
   /*padding: 3em 4em;*/
   color: var(--color-text);
@@ -116,20 +116,41 @@ body {
   @apply w-full h-full;
 }
 
+$sPX: clamp(0em, 8vw, 4em);
+$sPY: clamp(0em, 6vh, 3em);
+
+.screenPadding {
+  padding-right: $sPX;
+  padding-left: $sPX;
+  padding-top: $sPY;
+  padding-bottom: $sPY;
+}
+
+.screenPadding-y {
+  padding-top: $sPY;
+  padding-bottom: $sPY;
+}
+
+.screenPadding-x {
+  padding-right: $sPX;
+  padding-left: $sPX;
+}
+
+.menuYPadding {
+  padding-top: clamp(4em, 28vh, 13.5em);
+  padding-bottom: $sPY;
+}
+
+.appBody {
+  padding-top: clamp(4em, 24vh, 8em);
+}
+
 button {
   @apply text-black-80 bg-black-6 px-1em py-0.5em;
 }
 
 button.reverse {
   @apply text-black-40 bg-transparent;
-}
-
-.parrentCenter {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
 }
 
 h1 {

@@ -1,6 +1,6 @@
 export interface ButtonInterface {
-  title?: string;
-  href?: string;
+  title: string;
+  href: string;
 }
 
 export interface HeaderInterface {
