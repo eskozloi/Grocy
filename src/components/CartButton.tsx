@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { observer } from "mobx-react";
-import { ReactComponent as CartL } from "@/assets/icons/cartl.svg";
-import { ReactComponent as CartR } from "@/assets/icons/cartr.svg";
+import { ReactComponent as CartL } from "@/assets/icons/cartL.svg";
+import { ReactComponent as CartR } from "@/assets/icons/cartR.svg";
 import type { CartStore } from "@/store/cart";
 
 interface CartButtonInterface {

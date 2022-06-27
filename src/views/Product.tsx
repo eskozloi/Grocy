@@ -5,6 +5,7 @@ import headerStore from "@/store/header";
 import type { ProductInterface } from "@/store/products";
 import { ReactComponent as NoImage } from "@/assets/icons/noImage.svg";
 import productsStore, { fetchProducts } from "@/store/products";
+import cartStore from "@/store/cart";
 
 function Product() {
   const params = useParams();
@@ -62,7 +63,12 @@ function Product() {
             </div>
             <h3>stars</h3>
           </div>
-          <button className="bg-green-lime font-bold rounded-6px flex-grow">
+          <button
+            className="bg-green-lime font-bold rounded-6px flex-grow"
+            onClick={() => {
+              if (product) cartStore.push(product);
+            }}
+          >
             <h3>Add to cart</h3>
           </button>
         </div>
