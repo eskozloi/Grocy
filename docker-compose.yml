@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  db_redis:
+    image: "redis"
+    restart: always
+    ports:
+      - "6379"
+    command: redis-server /usr/local/etc/redis/redis.conf
+    volumes:
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+      - db-data-redis:/data
+  app_fe:
+    ports:
+      - "3000:3000"
+    build: .
+
+volumes:
+  db-data-redis:

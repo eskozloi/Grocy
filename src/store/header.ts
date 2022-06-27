@@ -1,5 +1,5 @@
 import { makeAutoObservable } from "mobx";
-import type { ButtonInterface, HeaderInterface } from "./../composables/interfaces";
+import type { ButtonInterface } from "./../composables/interfaces";
 
 class HeaderStore {
   title?: string = undefined;
@@ -14,9 +14,12 @@ class HeaderStore {
     this.button = undefined;
   }
 
-  set(headerData: HeaderInterface) {
-    this.title = headerData.title;
-    this.button = headerData.button;
+  setTitle(newTitle?: string) {
+    this.title = newTitle;
+  }
+
+  setButton(newButton?: ButtonInterface) {
+    this.button = newButton;
   }
 }
 

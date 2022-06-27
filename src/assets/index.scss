@@ -88,7 +88,6 @@
   margin: 0;
   position: relative;
   font-weight: 400;
-  /*overflow: hidden;*/
 }
 
 ::-webkit-scrollbar {
@@ -98,13 +97,11 @@
 body {
   height: 100vh;
   width: 100vw;
-  /*overflow: hidden;*/
+  overflow: hidden;
   background-color: #ffffff;
-  /*padding: 3em 4em;*/
   color: var(--color-text);
   background: var(--color-background);
   transition: color 0.5s, background-color 0.5s;
-  /*line-height: 1.6;*/
   font-size: 16px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -116,8 +113,8 @@ body {
   @apply w-full h-full;
 }
 
-$sPX: clamp(0em, 8vw, 4em);
-$sPY: clamp(0em, 6vh, 3em);
+$sPX: clamp(0em, 4vw, 4em);
+$sPY: clamp(0em, 3vh, 3em);
 
 .screenPadding {
   padding-right: $sPX;
@@ -137,12 +134,22 @@ $sPY: clamp(0em, 6vh, 3em);
 }
 
 .menuYPadding {
-  padding-top: clamp(4em, 28vh, 13.5em);
+  padding-top: clamp(4em, 14vh, 13.5em);
   padding-bottom: $sPY;
 }
 
 .appBody {
   padding-top: clamp(4em, 24vh, 8em);
+  padding-left: $sPX;
+  padding-right: $sPX;
+  padding-bottom: $sPY;
+  width: 100%;
+  height: 100%;
+}
+
+.cartMenuSize {
+  width: clamp(40em, 50vw, 50em);
+  height: clamp(14em, 68vh, 70em);
 }
 
 button {
@@ -173,6 +180,10 @@ p {
   font-size: 1.25em;
 }
 
+small {
+  font-size: 1em;
+}
+
 h1,
 h2,
 h3,
@@ -181,22 +192,6 @@ p {
   line-height: 1.28em;
 }
 
-/*.main-header-menu {
-  display: none;
-}
-.main-header-menu .frame-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch;
-  padding: 0;
-}*/
 .main-header-menu-toggle {
   cursor: pointer;
   -webkit-tap-highlight-color: transparent;
@@ -246,25 +241,31 @@ p {
 table {
   border-collapse: separate;
   border-spacing: 0 1em;
+  width: 100%;
+  height: 100%;
+}
+
+table * {
+  @apply text-center;
+}
+
+thead th * {
+  @apply font-medium;
 }
 
 td,
 th {
   padding: 1rem 0;
-  /*max-height: 6em;*/
 }
 
-td h4,
-th h4,
-td div,
-th div {
+td > :first-child,
+th > :first-child {
   padding: 0 1.25rem;
-  @apply flex justify-center items-center;
+  @apply flex justify-center items-center border-r border-r-black-40 gap-1em;
 }
 
-td h4,
-th h4 {
-  @apply border-r border-r-black-40;
+tr > :last-child * {
+  @apply border-none;
 }
 
 tbody {
@@ -293,18 +294,51 @@ tbody tr:nth-child(even) td {
   @apply border-t border-t-black-60 border-b border-b-black-60;
 }
 
-input,
-select {
-  /*background: none;
-  @apply border border-black-40 rounded-md;*/
-  @apply bg-black-6 p-0.5em;
+input[type="text"] {
+  width: clamp(8em, 28vw, 16em);
+  @apply border-b border-b-black-40 text-1.5em;
 }
-input:focus {
-  background: white;
-  border: 1px solid grey;
+
+input[type="text"]:focus {
+  outline: none;
+  @apply border-b-black-80;
 }
-input[type="date"]::-webkit-calendar-picker-indicator,
-input[type="date"]::-webkit-inner-spin-button {
-  margin: auto;
-  font-size: 84%;
+
+input[type="text"]::placeholder {
+  @apply text-black-40;
+}
+
+$i: 1;
+@while $i <= 100 {
+  .w-#{$i}pr {
+    width: #{$i}#{"%"};
+  }
+  $i: $i + 1;
+}
+
+@media screen and (max-width: 1200px) {
+  $i: 1;
+  @while $i <= 100 {
+    .w-mob-#{$i}pr {
+      width: #{$i}#{"%"};
+    }
+    .h-mob-#{$i}pr {
+      height: #{$i}#{"%"};
+    }
+    $i: $i + 1;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .hide-mob {
+    display: none;
+  }
+}
+
+.cart-inner-shadow {
+  box-shadow: inset 0.2em 0.25em 0.5em 0.01em rgba(0, 0, 0, 0.2);
+}
+
+.cart-notification-shadow {
+  box-shadow: inset 0em 0em 0.5em 0.01em rgba(0, 0, 0, 0.2);
 }

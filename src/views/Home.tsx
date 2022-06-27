@@ -3,7 +3,7 @@ import headerStore from "@/store/header";
 
 export default function Home() {
   useEffect(() => {
-    headerStore.set({ title: "Home" });
+    headerStore.setTitle("Home");
     return () => headerStore.reset();
   }, []);
 
